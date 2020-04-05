@@ -21,7 +21,6 @@ class Transfer
         receiver.deposit(amount)
         self.status = "complete"
       end
-      binding.pry
     else
       self.status = "rejected"
       return "Transaction rejected. Please check your account balance."
