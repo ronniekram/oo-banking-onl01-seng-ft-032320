@@ -21,7 +21,7 @@ class Transfer
         receiver.deposit(amount)
         self.status = "complete"
       end
-    elsif !notvalid?
+    elsif !valid?
       self.status = "rejected"
       return "Transaction rejected. Please check your account balance."
     end 
